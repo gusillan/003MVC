@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	
+<form th:action="@{formularioInsertarEntidad}" th:object=${entidad} method="POST">
+<p>Nombre : <input type="text" th:field="*{nombre}"/></p>
+<p>Apellidos : <input type="text" th:field="*{apellidos}"/><p>
+<p>Telefono : <input type="text" th:field="*{telefono}"/></p>
+<input type="submit" value="aceptar"/>
+</form>
+</body>
+</html>
